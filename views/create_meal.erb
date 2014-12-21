@@ -1,0 +1,19 @@
+<%= erb(:header, :layout => false) %>
+<link type="text/css" rel="stylesheet" href="/css/styles.css">
+<div class="wrapper">
+  <div id="box">
+    <center><div id="basket"><img src="http://i.imgur.com/aOWzm1b.png" alt="basket"/></div></center>
+    <h3> Please Sign Up</h3>
+    <form action="/meal/create" method="post">
+    <p>Whatcha Making?:</p>
+    <input type="text" name="name" placeholder="Mac N Cheese" required></p>
+    <p>How many people will your meal feed?:</p>
+    <input type="integer" name="will_feed" placeholder="5" required>
+    <p> Pickup Time:</p>
+    <input type="text" name="pickup_time" placeholder="12-23 4:15pm" required>
+    <p>Pickup Location:</p>
+    <input type="text" name="pickup_location" placeholder="1234 N 1st St" required>
+    <input id="submit" type="submit" value="Submit Meal">
+    </form>
+  </div>
+  </div>

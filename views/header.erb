@@ -1,0 +1,19 @@
+<header>
+	<div class="branding">
+	<div class="logo">
+		<a href="/"><img src="http://i.imgur.com/utsJiLk.png"></a>
+	</div>
+	<h1>Nourishing Neighbors</h1>
+	</div>
+	<nav>
+		<%if !@current_user == true %>
+			<a class="btn-main" href="/login">Sign in</a>
+			<a class="btn-main" href="/signup">Create an account</a>
+		<% else %>
+			<!-- buttons change if logged in -->
+			<a class="btn-main" href="/profile">Profile</a>
+			<a class="btn-main" href="/logout">Log out</a>
+		<% end %>
+	</nav>
+</header>
+<div class="clear-header"></div>

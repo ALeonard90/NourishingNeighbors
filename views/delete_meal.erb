@@ -1,0 +1,14 @@
+<%= erb(:header, :layout => false) %>
+<link type="text/css" rel="stylesheet" href="/css/styles.css">
+<div class="wrapper">
+  <div id="box">
+    <center><div id="basket"><img src="http://i.imgur.com/aOWzm1b.png" alt="basket"/></div></center>
+	<h3> Deleting your meal donation will leave your neighbors malnourished </h3>
+		<form action='/meal/delete/<%= @meal__to_delete.id %>' method='post'>
+			<input type="hidden" name="_method" value="delete">
+			<input type="hidden" value="<%= @meal_to_delete.id %>" name="meal_to_delete.id">
+			<input id="submit" type="submit" value="Delete :("/>
+		</form>
+	</div>
+</div>
+<a href="/profile/thankyou">Cancel :D </a>

@@ -1,0 +1,12 @@
+<%= erb(:header, :layout => false) %>
+<link type="text/css" rel="stylesheet" href="/css/styles.css">
+<div class="wrapper">
+  <div id="box">
+    <center><div id="card"><img src="http://i.imgur.com/PUAuD96.png" alt="card"/></div></center>
+		<form action="/greeting/create" method="post">
+  			<p>What would you like to say?:</p>
+    		<input type="text" name="body" placeholder="Warm Holiday Greeting..." required>
+ 			<input type="submit" value="Submit Greeting">
+		</form>
+	</div>
+</div>

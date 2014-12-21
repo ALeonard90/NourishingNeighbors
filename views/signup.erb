@@ -1,0 +1,15 @@
+<%= erb(:header, :layout => false) %>
+<link type="text/css" rel="stylesheet" href="/css/styles.css">
+<div class="wrapper">
+    <div id="box">
+        <div id="snow"><img src="http://i.imgur.com/YnKtGLT.png" alt="snowman"/></div>
+    <h3> Please Sign Up</h3>
+    <form action="/signup" method="post">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="tel" name="phonenumber" placeholder="Phone Number" />
+    <input type="email" name="email" placeholder="Email" />
+    <input type="password" name="password" placeholder="Password" />
+    <input id="submit" type="submit" value="Sign Up!" />
+    </form>
+    </div>
+</div>

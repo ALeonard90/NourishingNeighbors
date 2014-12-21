@@ -1,0 +1,21 @@
+<%= erb(:header, :layout => false) %>
+<link type="text/css" rel="stylesheet" href="/css/styles.css">
+<div class="wrapper">
+  <div id="box">
+    <center><div id="donation"><img src="http://i.imgur.com/9yswaT7.png" alt="cart"/></div></center>
+		<h3> Make Changes to Your Donation: </h3>
+      	<form action="/donation/update/<%= @donation_to_edit.id %>" method="post">
+        <input type="hidden" name="_method" value= "put">
+        <p>How many canned goods are you willing to part with? :</p>
+        <input type="integer" name="edited_num_cans" placeholder="<%=@can_to_edit.num_cans%>">
+        <p>Have a container to put them in (Yes/No) ?:</p>
+        <input type="text" name="edited_container" placeholder="<%=@can_to_edit.container%>">
+        <p>Pickup Date(Dec.20-Jan.4) / Time :</p>
+        <input type="text" name="edited_pickup_time" placeholder="<%=@can_to_edit.pickup_time%>">
+	      <p>Pickup Location:</p>
+        <input type="text" name="edited_pickup_location" placeholder="<%=@can_to_edit.pickup_location%>">
+          <input id="submit" type="submit" value="Update!"/>
+      </form>
+    </div>
+  </div>
+<a href="/profile/thankyou">Cancel</a>

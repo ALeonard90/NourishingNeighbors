@@ -1,0 +1,21 @@
+<%= erb(:header, :layout => false) %>
+<link type="text/css" rel="stylesheet" href="/css/styles.css">
+<div class="wrapper">
+  <div id="box">
+    <center><div id="basket"><img src="http://i.imgur.com/aOWzm1b.png" alt="basket"/></div></center>
+    <h3> Update Meal Donation: </h3>
+  <form action="/meal/update/<%= @meal_to_edit.id %>" method="post">    
+    <input type="hidden" name="_method" value="put">
+    <p>Whatcha Making? :</p>
+    <input type="text" name="edited_name" placeholder="<%=@meal_to_edit.name%>" required>
+    <p>How many people will your meal feed?:</p>
+    <input type="integer" name="edited_will_feed" placeholder="<%=@meal_to_edit.will_feed%>" required>
+    <p> Pickup Time:</p>
+    <input type="text" name="edited_pickup_time" placeholder "<%=@meal_to_edit.pickup_time%>">
+	   <p>Pickup Location:</p>
+    <input type="text" name="edited_pickup_location" placeholder="<%=@meal_to_edit.pickup_location%>">
+   <input id="submit" type="submit" value="Update!"/>
+  </form>
+</div>
+</div>
+<a href="/profile/thankyou">Cancel</a>

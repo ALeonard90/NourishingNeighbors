@@ -1,0 +1,280 @@
+body {
+	background-color: #A22C27;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.clear-header{
+	display: block;
+	height: 30px;
+	clear:both
+}
+
+/*header */
+header{
+	height:80px;
+	background-color: #F5F4D7;
+	width: 100%;
+	margin-top: 20px;
+}
+
+header .logo{
+	float: left;
+}
+
+header h1{
+	float: left;
+	color: black;
+	margin-left: 5px;
+	font-family: 'Playfair Display', serif;
+}
+
+header nav{
+	float: right;
+	clear: both;
+	margin-top: -60px;
+}
+
+header nav li{
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	width: 16.66%;
+
+}
+
+header nav li a{
+	background: #7A7E5F;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.btn-main:hover{
+	background: #A7BA59;
+}
+
+.btn-main {
+	width: 150px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	background: #015B7E;
+	color: white;
+	border: 0;
+	margin: 0 20px 0 0;
+}
+
+/*Landing Page*/
+.landing_page{
+display: inline-block;
+}
+
+.landing_page h2{
+	margin-top: -20px;
+	font-size: 40px;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	color: #F5F4D7;
+}
+
+.nourished{
+margin: 40px 50px 20px 50px;
+color:#F5F4D7;
+font-weight: lighter;
+font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+}
+
+
+
+/*log in */
+
+#wrapper{
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 40px 0;
+}  
+
+#box{
+  width: 375px;
+  height: auto;
+  margin: 0 auto;
+  background: #F5F4D7;
+  border: thin solid #ededed;
+}
+#box > img{
+  width: 16px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 30px 0 20px 0;
+}
+
+#snow > img{
+	height: 40px;
+	width: 40px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+}
+
+#box > h3{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: .9em;
+  color: $gray;
+  margin: 0 0 35px 0;
+} 
+
+#box > form{
+  width: 100%;
+  height: auo;
+  margin: 0 auto;
+  text-align: center;
+}
+#box > form > input{
+  display: inline-block;
+  width: 260px;
+  height: 50px;
+  margin: 5px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: .8em;
+  border: 1.5px solid #cccccc;
+  transition: all .2s ease;
+}
+#box > form > input:focus{
+  border: thin solid #015b7e;
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+  color: $light-gray;
+  font-weight: 700;
+  font-size: .9em;
+}
+
+#submit{
+	background: #7A7E5F;
+	color: white;
+	text-align: center;
+  	margin-bottom: 20px;
+  	border-radius: 3px;
+}
+
+#submit:hover{
+	background: #A7BA59;
+}
+
+
+/*Profile View*/
+
+.welcome{
+	color: #F5F4D7;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 30px;
+	font-family: 'Playfair Display', serif;
+	margin-top: -25px;
+}
+
+h4 a{
+	border: 2px solid #FFEFB9;
+	background-color: #34502B;
+	color: #FFEFB9;
+	text-decoration: none;
+	font-size: 13px;
+	padding: 4px;
+}
+
+h4 a:hover{
+	background-color: #F9C800;
+	color: #5290A4;
+}
+
+.profile_content{
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+/*Profile Tables*/
+
+.table_title{
+	margin-bottom: 10px;
+	color: #E0DFB1;
+	font-size: 18px;
+}
+
+.flat-table {
+		margin-bottom: 20px;
+		border-collapse:collapse;
+		width: 60%;
+		font-family: 'Open Sans', sans-serif;
+		border: none;
+                border-radius: 3px;
+               -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+	}
+
+	.flat-table th, .flat-table td {
+		box-shadow: inset 0 -1px rgba(0,0,0,0.25), 
+			inset 0 1px rgba(0,0,0,0.25);
+	}
+	.flat-table th {
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+		padding: .3em;
+		color: rgba(0,0,0,0.45);
+		text-shadow: 0 0 1px rgba(0,0,0,0.1);
+		font-size: .9em;
+	}
+	.flat-table td {
+		color: #f7f7f7;
+		padding: 0.7em 1em 0.7em 1.15em;
+		text-shadow: 0 0 1px rgba(255,255,255,0.1);
+		font-size: .9em;
+	}
+	.flat-table tr {
+		-webkit-transition: background 0.3s, box-shadow 0.3s;
+		-moz-transition: background 0.3s, box-shadow 0.3s;
+		transition: background 0.3s, box-shadow 0.3s;
+	}
+	.flat-table-1 {
+		background: #336ca6;
+	}
+
+	.flat-table a{
+		text-decoration: none;
+		color: #F9C800;
+		padding: 1px;
+		border: 2px solid #F5F4D7;
+		background-color: #34502B;
+		margin-left: 3px
+	}
+
+	.flat-table a:hover{
+		background-color: #A22C27;
+		color: #F5F4D7;
+	}
+
+/*Profile/thankyou*/
+.click_me {
+	font-family: 'Playfair Display', serif;
+	border: 3px solid #F0D890;
+	background-color: #384030;
+	width: 200px;
+	font-size: 26px;
+	margin-bottom: 40px;
+	text-align: center;
+	margin-left: 40%;
+}
+
+.click_me a{
+	text-decoration: none;
+	color: #E34437;
+}
+
+.click_me img{
+	height:70px;
+	width:70px;
+}
