@@ -224,6 +224,7 @@ get '/profile/thankyou' do
 end
 
 get '/view/donations' do
+  @users = User.all
   @cans = Can.all
   @greetings = Greeting.all
   @meals = Meal.all
